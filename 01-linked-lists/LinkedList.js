@@ -97,4 +97,43 @@ export default class LinkedList {
 
     return true
   }
+
+  /**
+   * @param {any} value value to delete
+   * @returns {boolean} returns true if the value is found and deleted, false otherwise
+   */
+  remove (value) {
+    let currentHead = this.head
+
+    if (currentHead === null) {
+      return false
+    }
+
+    // if the head is the value to remove (the happiest path)
+    if (currentHead.value === value) {
+      if (currentHead === this.tail) {
+        this.head = null
+        this.tail = null
+      } else {
+        this.head = currentHead.next
+      }
+      return true
+    }
+
+    while (currentHead.next !== null && currentHead.next.value !== value) {
+      currentHead = currentHead.next
+    }
+
+    if (currentHead.next !== null) {
+      if (currentHead.next === this.tail) {
+        this.tail = currentHead
+        this.tail.next = null
+      } else {
+        currentHead.next = currentHead.next.next
+      }
+      return true
+    }
+
+    return false
+  }
 }

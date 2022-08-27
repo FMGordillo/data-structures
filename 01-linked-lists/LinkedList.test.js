@@ -107,4 +107,36 @@ describe('01: Linked Lists', () => {
     expect(foundNode4).toBe(true)
     expect(foundNode5).toBe(false)
   })
+
+  it('should delete a node from the linked list', () => {
+    const linkedList = generateLinkedList(4)
+
+    const isNodeDeleted = linkedList.remove(2)
+    expect(isNodeDeleted).toBe(true)
+
+    const isNullNodeDeleted = linkedList.remove(null)
+    expect(isNullNodeDeleted).toBe(false)
+
+    const isOutOfBoundsNodeDeleted = linkedList.remove(5)
+    expect(isOutOfBoundsNodeDeleted).toBe(false)
+
+    const isHeadNodeDeleted = linkedList.remove(1)
+    expect(isHeadNodeDeleted).toBe(true)
+    expect(linkedList.head.value).toBe(3)
+
+    const sameValueLinkedList = new LinkedList()
+    sameValueLinkedList.append(1)
+    sameValueLinkedList.append(1)
+    const isRemoved = sameValueLinkedList.remove(1)
+    expect(isRemoved).toBe(true)
+    expect(sameValueLinkedList.tail.next).toBe(null)
+    expect(sameValueLinkedList.tail.value).toBe(1)
+  })
+
+  it('should return false if linked list does not have value', () => {
+    const linkedList = generateLinkedList()
+    linkedList.remove(1)
+    const isRemoved = linkedList.remove(1)
+    expect(isRemoved).toBe(false)
+  })
 })
