@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1661619696106" clover="3.2.0">
+  <project timestamp="1661619696106" name="All files">
+    <metrics statements="35" coveredstatements="34" conditionals="13" coveredconditionals="13" methods="8" coveredmethods="8" elements="56" coveredelements="55" complexity="0" loc="35" ncloc="35" packages="1" files="2" classes="2"/>
+    <file name="LinkedList.js" path="/home/fmgordillo/code/data-structures-javascript/01-linked-lists/LinkedList.js">
+      <metrics statements="32" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="30" count="14" type="stmt"/>
+      <line num="33" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="34" count="6" type="stmt"/>
+      <line num="35" count="6" type="stmt"/>
+      <line num="38" count="8" type="stmt"/>
+      <line num="39" count="8" type="stmt"/>
+      <line num="42" count="14" type="stmt"/>
+      <line num="47" count="4" type="stmt"/>
+      <line num="49" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="50" count="2" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="55" count="2" type="stmt"/>
+      <line num="57" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="59" count="2" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
+      <line num="65" count="2" type="stmt"/>
+      <line num="67" count="2" type="stmt"/>
+      <line num="72" count="4" type="stmt"/>
+      <line num="73" count="4" type="stmt"/>
+      <line num="75" count="4" type="stmt"/>
+      <line num="76" count="6" type="stmt"/>
+      <line num="77" count="6" type="stmt"/>
+      <line num="80" count="4" type="stmt"/>
+    </file>
+    <file name="Node.js" path="/home/fmgordillo/code/data-structures-javascript/01-linked-lists/Node.js">
+      <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <line num="3" count="18" type="stmt"/>
+      <line num="4" count="18" type="stmt"/>
+      <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+    </file>
+  </project>
+</coverage>
