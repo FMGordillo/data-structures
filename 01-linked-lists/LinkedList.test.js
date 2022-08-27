@@ -92,5 +92,19 @@ describe('01: Linked Lists', () => {
     })
   })
 
-  it('should return the node at the given index', () => {})
+  it('should return false if searched value does not exist', () => {
+    const linkedList = generateLinkedList(4)
+    const foundNode = linkedList.contains(5)
+    expect(foundNode).toBe(false)
+  })
+
+  it('should return true if searched value exists', () => {
+    const linkedList = generateLinkedList(4)
+    const foundNode2 = linkedList.contains(2)
+    const foundNode4 = linkedList.contains(4)
+    const foundNode5 = linkedList.contains(5)
+    expect(foundNode2).toBe(true)
+    expect(foundNode4).toBe(true)
+    expect(foundNode5).toBe(false)
+  })
 })

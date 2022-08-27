@@ -79,4 +79,22 @@ export default class LinkedList {
 
     return size
   }
+
+  /**
+   * @param {any} value value to search for
+   * @returns {boolean} returns true if the value is found, false otherwise
+   */
+  contains (value) {
+    let currentHead = this.head
+
+    while (currentHead !== null && currentHead.value !== value) {
+      currentHead = currentHead.next
+    }
+
+    if (currentHead === null) {
+      return false
+    }
+
+    return true
+  }
 }
