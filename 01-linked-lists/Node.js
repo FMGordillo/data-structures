@@ -1,4 +1,8 @@
 export class Node {
+  /**
+   * @param {any} value
+   * @param {Node | null} [next = null]
+   */
   constructor (value, next = null) {
     this.value = value
     this.next = next

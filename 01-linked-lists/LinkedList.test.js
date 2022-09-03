@@ -139,4 +139,26 @@ describe('01: Linked Lists', () => {
     const isRemoved = linkedList.remove(1)
     expect(isRemoved).toBe(false)
   })
+
+  it('should be iterable', () => {
+    const linkedList = generateLinkedList(5)
+    const values = []
+
+    for (const value of linkedList.map()) {
+      values.push(value)
+    }
+
+    expect(values).toEqual([1, 2, 3, 4, 5])
+  })
+
+  it('should be iterable on reverse', () => {
+    const linkedList = generateLinkedList(5)
+    const values = []
+
+    for (const value of linkedList.mapReverse()) {
+      values.push(value)
+    }
+
+    expect(values).toEqual([5, 4, 3, 2, 1])
+  })
 })

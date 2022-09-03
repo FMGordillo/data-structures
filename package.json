@@ -19,6 +19,7 @@
     "standard": "17.0.0"
   },
   "standard": {
-    "globals": ["describe", "it", "expect"]
+    "globals": ["describe", "it", "expect"],
+    "ignore": ["node_modules", "coverage"]
   }
 }

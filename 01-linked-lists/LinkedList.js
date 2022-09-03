@@ -136,4 +136,33 @@ export default class LinkedList {
 
     return false
   }
+
+  * map () {
+    let currentHead = this.head
+    while (currentHead !== null) {
+      yield currentHead.value
+      currentHead = currentHead.next
+    }
+  }
+
+  * mapReverse () {
+    let current
+    let previous
+
+    if (this.tail !== null) {
+      current = this.tail
+
+      while (current !== this.head) {
+        previous = this.head
+
+        while (previous.next !== current) {
+          previous = previous.next
+        }
+        yield current.value
+        current = previous
+      }
+
+      yield current.value
+    }
+  }
 }
